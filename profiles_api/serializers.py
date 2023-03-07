@@ -8,7 +8,7 @@ class HElloSerializer(serializers.Serializer):
 class UserProfileSerializer(serializers.ModelSerializer):
     """Serializes a user profile object"""
 
-    class meta:
+    class Meta:
         model = models.UserProfile
         fields = ['id', 'email', 'name', 'password']
         extra_kwargs = {
